@@ -37,11 +37,11 @@ class Stack<T> {
 
 //Graph Class
 class Graph {
-  int _numberOfVetices = 0;
+  int _numberOfVertices = 0;
   final List<List<int>> _adjacencyList = [];  
-  Graph(int numberOfVetices) {
-    _numberOfVetices = numberOfVetices;
-    for( var i = 0; i <= _numberOfVetices; i++ ) {_adjacencyList.add([]);}}
+  Graph(int numberOfVertices) {
+    _numberOfVertices = numberOfVertices;
+    for( var i = 0; i <= _numberOfVertices; i++ ) {_adjacencyList.add([]);}}
   
   //Adding edges to the vertex
   void addEdge(int v, int w) {_adjacencyList[v].add(w);}
